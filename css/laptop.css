@@ -1,0 +1,457 @@
+/* digital cv */
+    /*header*/
+    .banner {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .img-header {
+        position: relative;
+        width: 100%;
+        filter: brightness(65%);
+    }
+
+    .header-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 25%;
+    }
+
+    /*nav bar*/
+    nav {
+        margin-top: -6px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-item {
+        text-align: center;
+        padding: 20px 20px;
+        border-style: groove;
+        border-width: thin;
+        border-color: #DCDCDC;
+        flex-basis: 150px;
+        gap: 0px;
+    }
+
+    .avatar-container {
+        position: relative;
+        flex-basis: 300px;
+        margin-top: 6px;
+    }
+
+    .avatar {
+        position: absolute;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 9px;
+        border-color: white;
+    }
+
+    .nav-icon {
+        margin-right: 6px;
+        color: #199cdb;
+    }
+    /*thông tin*/
+    .info-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 100px 0;
+    }
+
+    .info-item1 {
+        background-color: whitesmoke;
+    }
+
+    .info-item2 {
+        background-color: rgb(235,235,235);
+    }
+
+    .info-item1, .info-item2 {
+        padding: 50px;
+    }
+
+    .info-icon-container {
+        display: flex;
+        gap: 20px;
+        margin-top: 40px;
+        color: #199cdb;
+    }
+
+    .info-input {
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        border-width: thin;
+        border-color: gainsboro;
+        border-style: groove;
+    }
+
+    .info-input:focus {
+        outline: none;
+        box-shadow: 0px -2px 5px #199cdb, 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .text-under-input {
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    /*lý lịch*/
+    .dropdown-arrow {
+        height: 0;
+        width: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid black;
+        display: inline-block;
+    }
+
+    .up-arrow {
+        height: 0;
+        width: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 10px solid black;
+        display: inline-block;
+    }
+
+    .experience-dropdown-btn, .education-dropdown-btn, .activity-dropdown-btn, .hobby-dropdown-btn, .language-dropdown-btn, .skill-dropdown-btn  {
+        visibility: hidden;
+        padding: 5px 10px;
+        background-color: #ffff9e;
+        border-color: #ffff9e;
+        color: black;
+        border-style: none;
+        margin-top: 2px;
+        margin-bottom: 0px;
+        width: 45%;
+        border-radius: 20px;
+        border-width: thin;
+    }
+
+    .portfolio-container:hover {
+        box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.2), 0px 1px 10px rgba(0, 0, 0, 0.2);
+        .experience-dropdown-btn,
+        .education-dropdown-btn,
+        .activity-dropdown-btn,
+        .hobby-dropdown-btn,
+        .language-dropdown-btn,
+        .skill-dropdown-btn {
+            visibility: visible;
+        }
+    }
+
+    .portfolio-head, .portfolio-icon {
+        display: inline-block;
+    }
+
+    .portfolio-head {
+        width: 70%;
+    }
+
+    .grid-gap {
+        grid-gap: 20px;
+    }
+
+    .portfolio-border {
+        border-style: groove;
+        border-color: #DCDCDC;
+        border-width: thin;
+    }
+
+    .portfolio-p {
+        gap: 20px;
+    }
+
+    .portfolio-p div::before {
+        content: '';
+        display: block;
+        border-radius: 50%;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #199cdb;
+        margin-top: 5px;
+    }
+
+    .portfolio-p div {
+        align-self: flex-start;
+    }
+
+    .flex-cus-y {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .portfolio-flex-icon-gap {
+        gap: 10px;
+    }
+
+    .portfolio-hobby-icon {
+        border-radius: 50%;
+        border-color: #199cdb;
+        color: #199cdb;
+        border-width: thin;
+        border-style: solid;
+        padding: 10px; 
+        margin-bottom: 10px;
+    }
+
+    .blue-grade-bar, .gray-grade-bar {
+        display: inline-block;
+        height: 2px;
+        margin-right: 10px;
+        width: 45px; 
+    }
+
+    .blue-grade-bar {
+        background: #199cdb;
+    }
+
+    .gray-grade-bar {
+        background: #DCDCDC; 
+    }
+
+    /* chứng chỉ giải thưởng */
+    .certificate-laptopsize-img {
+        width: 40%;
+    }
+
+    .certificate-backgr {
+        background-color: whitesmoke;
+    }
+
+    .certificate-web {
+        border-right-style: solid;
+        border-color: #d6c08d;
+        border-width: thin;
+    }
+
+    .cer-border {
+        grid-column: 1/3;
+        height: 0.5px;
+        background-color: #d6c08d;
+    }
+
+    .certificate-database {
+        grid-row: 3/4;
+        margin-bottom: 60px;
+    }
+
+    .cer-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto;
+        column-gap: 15px;
+        row-gap: 40px;
+    }
+
+    .cer-flex-gap {
+        gap: 20px;
+    }
+
+    /* Dự án */
+    .project-grid-gap {
+        column-gap: 5px;
+    }
+
+    .project-container-maxwidth, .project-container-maxwidth img {
+        max-width: 320px;
+        height: auto;
+    }
+
+    .flex-y {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .cus-border {
+        border-style: groove none;
+        border-width: thin;
+        border-color: #DCDCDC;
+    }
+
+    .project-year {
+        background-color: #199cdb;
+        color: white; 
+        width: 70px; 
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: inline-block; 
+        text-align: center; 
+        border-radius: 30px;
+    }
+
+    .maxwidth {
+        width: 320px;
+        height: auto;
+    }
+
+    .table {
+        max-width: 320px;
+        height: auto;
+    }
+
+    .project-flex-gap {
+        gap: 0px;
+    }
+
+    tr {
+        display: grid;
+        gap: 0px;
+        grid-template-columns: 30% 1fr;
+    }
+
+    .border-bottom-none {
+        border-bottom: white;
+    }
+
+    /* footer */
+    footer {
+        margin-top: 60px;
+        margin-bottom: 70px;
+        background-color: whitesmoke;
+        display: flex;
+        gap: 60px;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+    }
+
+    footer a {
+        display: flex;
+    }
+
+    .footer-icon {
+        margin-right: 6px;
+        color: #199cdb;
+        font-size: 30px;
+    }
+
+    footer p {
+        position: relative;
+        top: 15px;
+    }
+
+
+
+
+
+/* Project Charter */
+    /* contianer của cả trang web */
+    .project-charter-container {
+        background-color: blue;
+        grid-gap: 19px;
+        grid-template-rows: auto auto;
+        grid-template-columns: 2fr 1fr 1fr;
+        height: auto;
+        width: auto;
+    }
+    
+    /* container của từng mục */
+    .content-container {
+        background-color: aliceblue;
+    }
+    
+    /* header của mỗi mục */
+    .charter-header {
+        color: blue;
+    }
+    
+    /* icon size của toàn web */
+    .icons-size {
+        font-size: 20px;
+    }
+
+    /* fs của mục goal và team */
+    .goal-team-header-fs {
+        font-size: 16px;
+    }
+    /* gap của mục timeline và container */
+    .timeline-primary-gap {
+        gap: 30px;
+    }
+
+    /* mục scopes */
+    .scopes-grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        column-gap: 80px;
+    }
+
+    /* mục timeline */
+    .timeline {
+        grid-column: 3/4;
+        grid-row: 1/-1;
+    }
+
+    .timeline-content-container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        column-gap: 36px;
+    }
+
+    .number {
+        border-radius: 50%;
+        border-width: 2px;
+        padding: 7px 11px;
+        background-color: rgb(157, 139, 231);
+        color: white;
+        border-color: #5b5a5a;
+        border-style:solid ;
+    }
+
+    .border-bottom-dotted {
+        border-bottom-style: dotted;
+        border-width: 2px;
+        border-color: #199cdb;
+    }
+
+    
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
