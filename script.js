@@ -50,7 +50,7 @@ function nextTick(){
         drawSnake();
         checkGame();
         nextTick();
-        }, 400);
+        }, 100);
     }
     else{
         gameOver();
@@ -150,7 +150,7 @@ function moveSnake(){
         myInterval = setInterval(() => {
             SpeacilCountDown.innerHTML = "Món đặc biệt sẽ hết trong " + speacilCount + "s";
             speacilCount -= 1;
-        }, 300);
+        }, 900);
         intervalCondtion = false;
     }
     
@@ -209,7 +209,8 @@ function gameOver(){
     ctx.font = "50px MV Boli";
     ctx.fillStyle = "black";
     ctx.textAlign = "center";
-    ctx.fillText("GÀ QUÁ \n Tống Minh Quân!", gameWidth / 2, gameHeight / 2);
+    ctx.fillText("GÀ THẾ", gameWidth / 2, gameHeight / 2);
+    ctx.fillText("Tống Minh Quân!", gameWidth / 2, gameHeight / 1.7);
     running = false;
 }
 
