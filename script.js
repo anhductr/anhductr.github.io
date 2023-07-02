@@ -210,7 +210,6 @@ function gameOver(){
     ctx.fillStyle = "black";
     ctx.textAlign = "center";
     ctx.fillText("GÀ THẾ", gameWidth / 2, gameHeight / 2);
-    ctx.fillText("Tống Minh Quân!", gameWidth / 2, gameHeight / 1.7);
     running = false;
 }
 
