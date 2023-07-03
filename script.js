@@ -210,6 +210,7 @@ function gameOver(){
     ctx.fillStyle = "black";
     ctx.textAlign = "center";
     ctx.fillText("GÀ THẾ", gameWidth / 2, gameHeight / 2);
+    ctx.fillText("HOÀNG HÀ", gameWidth / 2, gameHeight / 1.75);
     running = false;
 }
 
