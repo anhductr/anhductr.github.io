@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @media((max-width: 500px)) {
+        @media((max-width: 750px)) {
             body {
                 font-family: 'Nunito', sans-serif;
             }
@@ -67,6 +67,14 @@
     <script>
         const hoverButton = document.getElementById("no-button");
         hoverButton.addEventListener("mouseenter", () => {
+            let rand1 = Math.floor((Math.random() * 100) + 1);
+            let rand2 = Math.floor((Math.random() * 100) + 1);
+            hoverButton.style.position = "absolute";
+            hoverButton.style.left = `${rand1}%`;
+            hoverButton.style.top = `${rand2}%`;
+        });
+
+        hoverButton.addEventListener("click", () => {
             let rand1 = Math.floor((Math.random() * 100) + 1);
             let rand2 = Math.floor((Math.random() * 100) + 1);
             hoverButton.style.position = "absolute";
