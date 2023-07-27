@@ -71,19 +71,22 @@
             do {
                 x = yBtn.offsetLeft;
                 y = yBtn.offsetTop;
-                console.log(`Tọa độ x: ${x}, Tọa độ y: ${y}`);
                 rand1 = Math.floor((Math.random() * 200) + 1);
                 rand2 = Math.floor((Math.random() * 200) + 1);
             }while(rand1 == x-1 || rand2 == y-1 || rand1 == x-2 || rand2 == y-2 || rand1 == x-3 || rand2 == y-3 || rand1 == x-4 || rand2 == y-4 || rand1 == x-5 || rand2 == y-5 || rand1 == x || rand2 == y || rand1 == x+1 || rand2 == y+1 || rand1 == x+2 || rand2 == y+2 || rand1 == x+3 || rand2 == y+3 || rand1 == x+4 || rand2 == y+4 || rand1 == x+5 || rand2 == y+5)
-            console.log(`Tọa độ x': ${rand1}, Tọa độ y': ${rand2}`);
             hoverButton.style.position = "relative";
             hoverButton.style.left = `${rand1}px`;
             hoverButton.style.top = `${rand2}px`;
         });
 
         hoverButton.addEventListener("touchstart", () => {
-            let rand1 = Math.floor((Math.random() * 100) + 1);
-            let rand2 = Math.floor((Math.random() * 100) + 1);
+            let rand1, rand2, x, y;
+            do {
+                x = yBtn.offsetLeft;
+                y = yBtn.offsetTop;
+                rand1 = Math.floor((Math.random() * 200) + 1);
+                rand2 = Math.floor((Math.random() * 200) + 1);
+            }while(rand1 == x-1 || rand2 == y-1 || rand1 == x-2 || rand2 == y-2 || rand1 == x-3 || rand2 == y-3 || rand1 == x-4 || rand2 == y-4 || rand1 == x-5 || rand2 == y-5 || rand1 == x || rand2 == y || rand1 == x+1 || rand2 == y+1 || rand1 == x+2 || rand2 == y+2 || rand1 == x+3 || rand2 == y+3 || rand1 == x+4 || rand2 == y+4 || rand1 == x+5 || rand2 == y+5)
             hoverButton.style.position = "relative";
             hoverButton.style.left = `${rand1}%`;
             hoverButton.style.top = `${rand2}%`;
