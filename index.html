@@ -87,6 +87,17 @@
             hoverButton.style.left = `${rand1}px`;
             hoverButton.style.top = `${rand2}px`;
         });
+
+        hoverButton.addEventListener("click", () => {
+            let rand1, rand2, x, y;
+            x = yBtn.offsetLeft;
+            y = yBtn.offsetTop;
+            rand1 = Math.floor((Math.random() * 150) + 1);
+            rand2 = Math.floor((Math.random() * 150) + 1);
+            hoverButton.style.position = "relative";
+            hoverButton.style.left = `${rand1}px`;
+            hoverButton.style.top = `${rand2}px`;
+        });
     </script>
 </body>
 </html>
