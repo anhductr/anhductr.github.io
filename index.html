@@ -84,7 +84,7 @@
         hoverButton.addEventListener("touchstart", () => {
             let rand1 = Math.floor((Math.random() * 100) + 1);
             let rand2 = Math.floor((Math.random() * 100) + 1);
-            hoverButton.style.position = "absolute";
+            hoverButton.style.position = "relative";
             hoverButton.style.left = `${rand1}%`;
             hoverButton.style.top = `${rand2}%`;
         });
