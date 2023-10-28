@@ -65,29 +65,36 @@
     </div>
 
     <script>
+        let x,y;
         let yBtn = document.querySelector("#yes-button"); 
         const hoverButton = document.getElementById("no-button");
         hoverButton.addEventListener("mouseenter", () => {
-            let rand1, rand2, x, y;
-            x = yBtn.offsetLeft;
-            y = yBtn.offsetTop;
-            do {
+            let rand1, rand2;
+            rand1 = Math.floor(Math.random() * 150);
+            rand2 = Math.floor(Math.random() * 150);
+            x = rand1;
+            y = rand2;
+            while(rand1 <= x-70 && rand1 >= x+70 && rand2 <= y-70 && rand2 >= y+70){
                 rand1 = Math.floor(Math.random() * 150);
                 rand2 = Math.floor(Math.random() * 150);
-            } while(rand1 <= x-20 && rand1 >= x+20 && rand2 <= y-20 && rand2 >= y+20);
+            }
+            console.log(x, y);
             hoverButton.style.position = "relative";
             hoverButton.style.left = `${rand1}px`;
             hoverButton.style.top = `${rand2}px`;
         });
 
         hoverButton.addEventListener("touchstart", () => {
-            let rand1, rand2, x, y;
-            x = yBtn.offsetLeft;
-            y = yBtn.offsetTop;
-            do {
+            let rand1, rand2;
+            rand1 = Math.floor(Math.random() * 150);
+            rand2 = Math.floor(Math.random() * 150);
+            x = rand1;
+            y = rand2;
+            while(rand1 <= x-70 && rand1 >= x+70 && rand2 <= y-70 && rand2 >= y+70){
                 rand1 = Math.floor(Math.random() * 150);
                 rand2 = Math.floor(Math.random() * 150);
-            } while(rand1 <= x-20 && rand1 >= x+20 && rand2 <= y-20 && rand2 >= y+20);
+            }
+            console.log(x, y);
             hoverButton.style.position = "relative";
             hoverButton.style.left = `${rand1}px`;
             hoverButton.style.top = `${rand2}px`;
